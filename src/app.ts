@@ -7,12 +7,7 @@ const exampleRouteRouter = require('./routes/exampleRoute');
 // Express startup
 const app = express();
 const router = express.Router();
-const port = 3000;
-
-// Example index page
-app.get('/', (req: Request, res: Response) => {
-  res.send('Express + TypeScript Server');
-});
+const port = 3001;
 
 // Assign routers to routes
 app.use('/exampleRoute', exampleRouteRouter);
